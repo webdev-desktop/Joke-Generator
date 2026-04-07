@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1f1f1f, #2c2c2e);
+  padding: 2rem;
+}
+
+/* Container */
+
+.container {
+  width: 100%;
+  max-width: 600px; /* pehle 420 tha */
+  background: #ffffff;
+  border-radius: 2rem;
+  padding: clamp(2.5rem, 4vw, 4rem);
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: clamp(3.5rem, 5vw, 5rem);
+}
+
+/* Logo styling */
+.logo-title img {
+  width: clamp(30px, 4vw, 45px);
+  height: auto;
+  object-fit: cover;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+/* Joke text */
+.api_body {
+  font-size: clamp(1.5rem, 4vw, 1.8rem);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
+
+/* Button */
+button {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  border: none;
+
+  background: linear-gradient(to right, #15244e, #06b1f4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile tweaks */
+
+/* Ultra Wide Screens (1800px+) */
+@media (min-width: 1500px) {
+  .container {
+    max-width: 750px;
+    padding: 4rem 5rem;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 3vw, 4rem);
+  }
+
+  .subtitle {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+
+  .api_body {
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
+  }
+
+  button {
+    font-size: clamp(1.5rem, 2vw, 1.9rem);
+    padding: 1.2rem 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 2.5rem 2rem;
+  }
+}
