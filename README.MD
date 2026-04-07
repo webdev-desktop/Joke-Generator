@@ -1,7 +1,7 @@
 # 😂 LaughLoop – Dad Joke Generator
 
 🚀 **Live Demo:**
-🔗[Live Demo](https://gradient.webdevzone.in)
+🔗[Live Demo](https://joke-gen.webdevzone.in)
 
 🚀 A fun and lightweight API-based web app that delivers random dad jokes instantly.  
 Built to practice **frontend development**, **API handling**, and **modern responsive UI design**.
@@ -38,10 +38,8 @@ Built to practice **frontend development**, **API handling**, and **modern respo
 
 ## 📸 Screenshots
 
-> 📌 Add your screenshots here later
-
-![Project Screenshot](./images/project-preview.png)
-![Project Screenshot](./images/project-preview-mobile.png)
+> ![Project Screenshot](./images/project-preview.png)
+> ![Project Screenshot](./images/project-preview-mobile.png)
 
 ---
 
