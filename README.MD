@@ -49,8 +49,7 @@ Follow these steps to run the project locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/webdev-desktop/dad-joke-generator.git
-
+git clone https://github.com/webdev-desktop/Joke-Generator.git
 # 2. Go into the project folder
 cd dad-joke-generator
 
